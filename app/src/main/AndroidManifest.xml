@@ -15,11 +15,15 @@
         <activity
             android:name=".StarterActivity"
             android:label="Starters"
-            android:parentActivityName=".MainActivity"
-            />
-        <activity android:name=".MainCoursesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainCoursesActivity"
             android:label="Main Courses"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DessertsActivity"
+            android:label="Desserts"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
