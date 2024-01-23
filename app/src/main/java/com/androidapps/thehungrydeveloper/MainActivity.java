@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         startersCard = findViewById(R.id.card_view_starters);
-        mainsCard = findViewById(R.id.card_view_starters);
+        mainsCard = findViewById(R.id.card_view_mains);
 
         startersCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent startersActivityIntent = new Intent(MainActivity.this, StarterActivity.class);
 
                 startActivity(startersActivityIntent);
+            }
+        });
+
+        mainsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mainCoursesActivity = new Intent(MainActivity.this, MainCoursesActivity.class);
+
+                startActivity(mainCoursesActivity);
             }
         });
     }
