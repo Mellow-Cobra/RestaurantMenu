@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent launchEmailAppIntent = new Intent(Intent.ACTION_SENDTO);
-                launchEmailAppIntent.setData(Uri.parse("mailto:"));
+                launchEmailAppIntent.setData(Uri.parse("mailto:thedeveloper@gmail.com"));
                 startActivity(launchEmailAppIntent);
             }
         });
